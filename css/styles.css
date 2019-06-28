@@ -1,0 +1,1124 @@
+@charset "UTF-8";
+/*--------------------
+Lodur Icons
+--------------------*/
+/*--------------------
+General styles
+--------------------*/
+@font-face {
+  font-family: 'Dax-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Italic"), url("../assets/font/dax-italic-5872e0c289d8d.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Light"), url("../assets/font/dax-light-5872dfb3692b0.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Medium"), url("../assets/font/dax-medium-5872e00270bc1.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-MediumItalic"), url("../assets/font/dax-mediumitalic-5872e0e8d95e8.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Bold"), url("../assets/font/dax-bold-5872e03df1718.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-ExtraBold"), url("../assets/font/dax-extrabold-5872df5c91c89.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Regular"), url("../assets/font/ufonts.com_dax-regular.woff") format("woff"); }
+
+/*--------------------
+Lodur Icons
+--------------------*/
+/*--------------------
+General styles
+--------------------*/
+@font-face {
+  font-family: "lodur-minimalistic-icons";
+  src: url("../assets/icon/lodur-minimalistic-icons.eot?27zg7b");
+  src: url("../assets/icon/lodur-minimalistic-icons.eot?27zg7b#iefix") format("embedded-opentype"), url("../assets/icon/lodur-minimalistic-icons.ttf?27zg7b") format("truetype"), url("../assets/icon/lodur-minimalistic-icons.woff?27zg7b") format("woff"), url("../assets/icon/lodur-minimalistic-icons.svg?27zg7b#lodur-minimalistic-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="lodur-icon-"], [class*=" lodur-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "lodur-minimalistic-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.lodur-icon-athlete-1:before {
+  content: "a"; }
+
+.lodur-icon-chevron-up:before {
+  content: "b"; }
+
+.lodur-icon-dollar:before {
+  content: "c"; }
+
+.lodur-icon-list-ordered:before {
+  content: "d"; }
+
+.lodur-icon-bin:before {
+  content: "e"; }
+
+.lodur-icon-chat:before {
+  content: "f"; }
+
+.lodur-icon-more:before {
+  content: "g"; }
+
+.lodur-icon-minus2:before {
+  content: "h"; }
+
+.lodur-icon-alert:before {
+  content: "i"; }
+
+.lodur-icon-arrow-small-down:before {
+  content: "j"; }
+
+.lodur-icon-close2:before {
+  content: "k"; }
+
+.lodur-icon-list:before {
+  content: "l"; }
+
+.lodur-icon-three-bars:before {
+  content: "m"; }
+
+.lodur-icon-mail-read:before {
+  content: "n"; }
+
+.lodur-icon-arrow-small-up:before {
+  content: "o"; }
+
+.lodur-icon-arrow-small-left:before {
+  content: "p"; }
+
+.lodur-icon-arrow-small-right:before {
+  content: "q"; }
+
+.lodur-icon-mail:before {
+  content: "r"; }
+
+.lodur-icon-less:before {
+  content: "s"; }
+
+.lodur-icon-note:before {
+  content: "t"; }
+
+.lodur-icon-heart:before {
+  content: "u"; }
+
+.lodur-icon-arrow-up:before {
+  content: "v"; }
+
+.lodur-icon-arrow-right:before {
+  content: "w"; }
+
+.lodur-icon-flag:before {
+  content: "x"; }
+
+.lodur-icon-user-contact:before {
+  content: "y"; }
+
+.lodur-icon-settings:before {
+  content: "z"; }
+
+.lodur-icon-filter:before {
+  content: "A"; }
+
+.lodur-icon-arrow-left:before {
+  content: "B"; }
+
+.lodur-icon-arrow-down:before {
+  content: "C"; }
+
+.lodur-icon-edit:before {
+  content: "D"; }
+
+.lodur-icon-eye:before {
+  content: "E"; }
+
+.lodur-icon-add:before {
+  content: "F"; }
+
+.lodur-icon-star:before {
+  content: "G"; }
+
+.lodur-icon-check:before {
+  content: "H"; }
+
+.lodur-icon-chevron-down:before {
+  content: "I"; }
+
+.lodur-icon-zoom-in:before {
+  content: "J"; }
+
+.lodur-icon-minus:before {
+  content: "K"; }
+
+.lodur-icon-search:before {
+  content: "L"; }
+
+.lodur-icon-zoom-out:before {
+  content: "M"; }
+
+.lodur-icon-chevron-left:before {
+  content: "N"; }
+
+.lodur-icon-chevron-right:before {
+  content: "O"; }
+
+.lodur-icon-alarm:before {
+  content: "P"; }
+
+.lodur-icon-calendar:before {
+  content: "Q"; }
+
+.lodur-icon-user:before {
+  content: "R"; }
+
+.lodur-icon-print:before {
+  content: "S"; }
+
+.lodur-icon-edit-contact:before {
+  content: "T"; }
+
+.lodur-icon-import:before {
+  content: "U"; }
+
+.lodur-icon-comment:before {
+  content: "V"; }
+
+.lodur-icon-archive:before {
+  content: "W"; }
+
+.lodur-icon-unarchive:before {
+  content: "X"; }
+
+.lodur-icon-center-on:before {
+  content: "Y"; }
+
+.lodur-icon-zoom-to:before {
+  content: "Z"; }
+
+.lodur-icon-excel:before {
+  content: "0"; }
+
+.lodur-icon-user-info:before {
+  content: "1"; }
+
+.lodur-icon-data-grid:before {
+  content: "3"; }
+
+.lodur-icon-device-mobile:before {
+  content: "2"; }
+
+.lodur-icon-close-round:before {
+  content: "4"; }
+
+.lodur-icon-check-round:before {
+  content: "5"; }
+
+.lodur-icon-bin-open:before {
+  content: "6"; }
+
+.lodur-icon-move-to:before {
+  content: "7"; }
+
+.lodur-icon-d-selected:before {
+  content: "8"; }
+
+.lodur-icon-d-deselected:before {
+  content: "9"; }
+
+.lodur-icon-f-deselected:before {
+  content: "!"; }
+
+.lodur-icon-f-selected:before {
+  content: '"'; }
+
+.lodur-icon-successful:before {
+  content: "#"; }
+
+.lodur-icon-male:before {
+  content: "$"; }
+
+.lodur-icon-female:before {
+  content: "%"; }
+
+.lodur-icon-exclam:before {
+  content: "&"; }
+
+.lodur-icon-compass:before {
+  content: "'"; }
+
+.lodur-icon-location:before {
+  content: "("; }
+
+.lodur-icon-search-performance:before {
+  content: ")"; }
+
+.lodur-icon-administrator:before {
+  content: "*"; }
+
+.lodur-icon-kommandant:before {
+  content: "+"; }
+
+.lodur-icon-central:before {
+  content: ","; }
+
+.lodur-icon-payment:before {
+  content: "-"; }
+
+.lodur-icon-attachment:before {
+  content: "."; }
+
+.lodur-icon-expand:before {
+  content: "/"; }
+
+.lodur-icon-smiley-happy:before {
+  content: ":"; }
+
+.lodur-icon-smiley-normal:before {
+  content: ";"; }
+
+.lodur-icon-smiley-sad:before {
+  content: "<"; }
+
+.lodur-icon-download:before {
+  content: "="; }
+
+.lodur-icon-upload:before {
+  content: ">"; }
+
+.lodur-icon-statistics:before {
+  content: "?"; }
+
+.lodur-icon-adressbook:before {
+  content: "@"; }
+
+.lodur-icon-axe-big:before {
+  content: "["; }
+
+.lodur-icon-dta:before {
+  content: "]"; }
+
+.lodur-icon-master-copy:before {
+  content: "^"; }
+
+.lodur-icon-alarm-ringing:before {
+  content: "_"; }
+
+.lodur-icon-partly-cloudy:before {
+  content: "`"; }
+
+.lodur-icon-subscribe:before {
+  content: "|"; }
+
+.lodur-icon-ics:before {
+  content: "}"; }
+
+.lodur-icon-csv:before {
+  content: "~"; }
+
+.lodur-icon-weather-partly-cloudy-day-icon:before {
+  content: "\\"; }
+
+.lodur-icon-bed:before {
+  content: ""; }
+
+.lodur-icon-save:before {
+  content: ""; }
+
+.lodur-icon-locked-form:before {
+  content: "{"; }
+
+.lodur-icon-inactive:before {
+  content: ""; }
+
+.lodur-icon-marker-a:before {
+  content: ""; }
+
+.lodur-icon-marker-b:before {
+  content: ""; }
+
+.lodur-icon-marker-c:before {
+  content: ""; }
+
+.lodur-icon-marker-d:before {
+  content: ""; }
+
+.lodur-icon-army:before {
+  content: ""; }
+
+.lodur-icon-workplace:before {
+  content: ""; }
+
+.lodur-icon-boat:before {
+  content: ""; }
+
+.lodur-icon-driver-license:before {
+  content: ""; }
+
+.lodur-icon-bank:before {
+  content: ""; }
+
+.lodur-icon-group:before {
+  content: ""; }
+
+.lodur-icon-zug:before {
+  content: ""; }
+
+.lodur-icon-funktion:before {
+  content: ""; }
+
+.lodur-icon-terminart:before {
+  content: ""; }
+
+.lodur-icon-medal:before {
+  content: ""; }
+
+.lodur-icon-rank:before {
+  content: ""; }
+
+.lodur-icon-absent:before {
+  content: ""; }
+
+.lodur-icon-roman-7:before {
+  content: ""; }
+
+.lodur-icon-equipment:before {
+  content: ""; }
+
+.lodur-icon-course:before {
+  content: ""; }
+
+.lodur-icon-my-location:before {
+  content: ""; }
+
+.lodur-icon-location-of-emergency:before {
+  content: ""; }
+
+.lodur-icon-location-of-fire-engine:before {
+  content: ""; }
+
+.lodur-icon-location-of-fire-fepot:before {
+  content: ""; }
+
+.lodur-icon-forklift-icon-01:before {
+  content: ""; }
+
+.lodur-icon-pdf:before {
+  content: ""; }
+
+.lodur-icon-move-left:before {
+  content: ""; }
+
+.lodur-icon-move-right:before {
+  content: ""; }
+
+.lodur-icon-hourglass:before {
+  content: ""; }
+
+.lodur-icon-event-sign-off:before {
+  content: ""; }
+
+.lodur-icon-event-sign-off-undo:before {
+  content: ""; }
+
+.lodur-icon-mobile-siren:before {
+  content: ""; }
+
+.lodur-icon-cal-empty:before {
+  content: ""; }
+
+.lodur-icon-cal-check:before {
+  content: ""; }
+
+.lodur-icon-cal-cross:before {
+  content: ""; }
+
+.lodur-icon-xml:before {
+  content: ""; }
+
+.lodur-icon-taf:before {
+  content: ""; }
+
+.lodur-icon-emergency:before {
+  content: ""; }
+
+.lodur-icon-course-1:before {
+  content: ""; }
+
+.lodur-icon-general-activities:before {
+  content: ""; }
+
+.lodur-icon-meeting:before {
+  content: ""; }
+
+.lodur-icon-practice:before {
+  content: ""; }
+
+.lodur-icon-grant-permission:before {
+  content: ""; }
+
+.lodur-icon-transfer:before {
+  content: ""; }
+
+.lodur-icon-folder-closed:before {
+  content: ""; }
+
+.lodur-icon-folder-open:before {
+  content: ""; }
+
+.lodur-icon-folder-withfile:before {
+  content: ""; }
+
+.lodur-icon-time:before {
+  content: ""; }
+
+.lodur-icon-nav-usermanual:before {
+  content: ""; }
+
+.lodur-icon-nav-notes:before {
+  content: ""; }
+
+.lodur-icon-nav-setting:before {
+  content: ""; }
+
+.lodur-icon-nav-home:before {
+  content: ""; }
+
+.lodur-icon-nav-logout:before {
+  content: ""; }
+
+.lodur-icon-nav-upward:before {
+  content: ""; }
+
+.lodur-icon-nav-support:before {
+  content: ""; }
+
+.lodur-icon-nav-modulelist:before {
+  content: ""; }
+
+.lodur-icon-nav-hotlinks:before {
+  content: ""; }
+
+.lodur-icon-nav-monitor:before {
+  content: ""; }
+
+.lodur-icon-lock:before {
+  content: ""; }
+
+.lodur-icon-mobile-view:before {
+  content: ""; }
+
+.lodur-icon-hand:before {
+  content: ""; }
+
+.lodur-icon-eraser:before {
+  content: ""; }
+
+.lodur-icon-pentagon:before {
+  content: ""; }
+
+.lodur-icon-list-view:before {
+  content: ""; }
+
+.lodur-icon-column-view:before {
+  content: ""; }
+
+.lodur-icon-grid-view:before {
+  content: ""; }
+
+.lodur-icon-alarm-groups:before {
+  content: ""; }
+
+.lodur-icon-cart:before {
+  content: ""; }
+
+.lodur-icon-alarm-group2:before {
+  content: ""; }
+
+.lodur-icon-pending:before {
+  content: ""; }
+
+.lodur-icon-reject:before {
+  content: ""; }
+
+.lodur-icon-unlock:before {
+  content: ""; }
+
+.lodur-icon-location-small:before {
+  content: ""; }
+
+.lodur-icon-arrow-circle-right:before {
+  content: ""; }
+
+.lodur-icon-arrow-circle-left:before {
+  content: ""; }
+
+.lodur-icon-period-end:before {
+  content: ""; }
+
+.lodur-icon-change-course:before {
+  content: ""; }
+
+.lodur-icon-attendance-checklist:before {
+  content: ""; }
+
+.lodur-icon-exam-feedback:before {
+  content: ""; }
+
+.lodur-icon-checklist:before {
+  content: ""; }
+
+.lodur-icon-pencil:before {
+  content: ""; }
+
+.lodur-icon-pause:before {
+  content: ""; }
+
+.lodur-icon-home:before {
+  content: ""; }
+
+.lodur-icon-gender-neutral:before {
+  content: ""; }
+
+.lodur-icon-attendance:before {
+  content: ""; }
+
+.lodur-icon-breathing-apparatus:before {
+  content: ""; }
+
+.lodur-icon-walkie-talkie:before {
+  content: ""; }
+
+.lodur-icon-suggestion:before {
+  content: ""; }
+
+.lodur-icon-antenna:before {
+  content: ""; }
+
+.lodur-icon-man-confirmed-alarm:before {
+  content: ""; }
+
+.lodur-icon-course-full:before {
+  content: ""; }
+
+.lodur-icon-emergency-plan:before {
+  content: ""; }
+
+.lodur-icon-route:before {
+  content: ""; }
+
+.lodur-icon-course-booked:before {
+  content: ""; }
+
+.lodur-icon-min-participants:before {
+  content: ""; }
+
+.lodur-icon-full:before {
+  content: ""; }
+
+.lodur-icon-instructor:before {
+  content: ""; }
+
+.lodur-icon-clock:before {
+  content: ""; }
+
+.lodur-icon-chevron-thin-right:before {
+  content: ""; }
+
+.lodur-icon-chevron-thin-left:before {
+  content: ""; }
+
+.lodur-icon-star-tag:before {
+  content: ""; }
+
+.lodur-icon-map-center:before {
+  content: ""; }
+
+.lodur-icon-north:before {
+  content: ""; }
+
+.lodur-icon-teacher-full:before {
+  content: ""; }
+
+.lodur-icon-teacher-not-enough:before {
+  content: ""; }
+
+.lodur-icon-100:before {
+  content: ""; }
+
+.lodur-icon-no:before {
+  content: ""; }
+
+.lodur-icon-camera:before {
+  content: ""; }
+
+.lodur-icon-link:before {
+  content: ""; }
+
+.lodur-icon-file:before {
+  content: ""; }
+
+.lodur-icon-ake:before {
+  content: ""; }
+
+.lodur-icon-shopping-bag:before {
+  content: ""; }
+
+.lodur-icon-person-present:before {
+  content: ""; }
+
+.lodur-icon-person-absent:before {
+  content: ""; }
+
+.lodur-icon-undo:before {
+  content: ""; }
+
+.lodur-icon-phone:before {
+  content: ""; }
+
+.lodur-icon-web:before {
+  content: ""; }
+
+html, body {
+  padding: 0;
+  margin: 0; }
+
+#navbar {
+  background-color: black;
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 9;
+  padding-left: 32px; }
+  #navbar a {
+    font-family: "Dax-Regular";
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 1rem; }
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black; }
+    #navbar a.active {
+      background-color: #ddd;
+      color: black; }
+  #navbar .logo-topBar .company-name {
+    font-family: "Dax-Light";
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: right;
+    padding: 8px 47px 0 0; }
+    #navbar .logo-topBar .company-name span {
+      font-family: "Dax-Medium"; }
+
+section {
+  padding: 4rem 2rem 2rem 2rem;
+  margin-bottom: 30px; }
+  section h1 {
+    font-family: "Dax-Light";
+    font-size: 2.7rem;
+    color: #000000; }
+    section h1 .bold {
+      font-family: "Dax-Bold";
+      color: #8a292a;
+      padding: 0 1rem 0 0;
+      display: block;
+      font-size: 3rem; }
+    section h1 .borderBreak {
+      line-height: 0.5;
+      text-align: center; }
+      section h1 .borderBreak span {
+        display: inline-block;
+        position: relative;
+        left: 90px;
+        font-weight: 800; }
+        section h1 .borderBreak span::before {
+          content: "";
+          position: absolute;
+          height: 12px;
+          border-bottom: 1px solid #cfcfcf;
+          top: 0;
+          width: 74px;
+          right: 100%;
+          margin-right: 13px; }
+
+#intro {
+  background-color: #8a292a;
+  height: 100vh; }
+  #intro .company-name {
+    font-family: "Dax-Light";
+    font-size: 3rem;
+    color: #000000;
+    text-align: right;
+    position: relative;
+    top: 40vh; }
+    #intro .company-name span {
+      font-family: "Dax-Medium";
+      color: #ffffff; }
+
+#find .search-form {
+  float: right;
+  margin-top: 62px; }
+  #find .search-form .search-input {
+    border-radius: 50px;
+    border: 1px solid #b7b7b7;
+    outline: none;
+    padding: 5px 7px 5px 40px;
+    width: 450px;
+    color: #000; }
+    #find .search-form .search-input::placeholder {
+      color: #b0b0b0; }
+  #find .search-form .search-button {
+    border: none;
+    background: none;
+    outline: none;
+    position: relative;
+    top: 5px;
+    right: -45px; }
+    #find .search-form .search-button span {
+      font-size: 1.5rem;
+      color: #aeaeae; }
+
+#find .map-container {
+  height: 500px;
+  margin: 15px -47px 0 -47px; }
+
+#find .disabled {
+  pointer-events: none; }
+
+#portfolio nav {
+  width: 80%;
+  margin: 0 0 0 auto;
+  background: #fff;
+  padding: 50px 0 0 0; }
+  #portfolio nav ul {
+    list-style: none;
+    text-align: right;
+    padding: 0; }
+    #portfolio nav ul li {
+      display: inline-block; }
+      #portfolio nav ul li a {
+        font-family: "Dax-Regular";
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #000000;
+        margin: 0 10px; }
+        #portfolio nav ul li a:hover {
+          color: #8a292a;
+          cursor: pointer; }
+        #portfolio nav ul li a::after {
+          transition: all .5s; }
+        #portfolio nav ul li a::before {
+          transition: all .5s; }
+  #portfolio nav.stroke ul li a {
+    position: relative; }
+    #portfolio nav.stroke ul li a:hover::after {
+      width: 100%; }
+    #portfolio nav.stroke ul li a::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #8a292a;
+      height: 1px; }
+    #portfolio nav.stroke ul li a.current {
+      color: #8a292a;
+      font-weight: 800; }
+      #portfolio nav.stroke ul li a.current::after {
+        width: 100%; }
+
+#portfolio .portfolioContainer div a img {
+  width: 351px;
+  margin: 0 10px 10px 0; }
+
+#module .workflow-article h2 {
+  color: #8a292a;
+  font-family: "Dax-Regular"; }
+
+#module .workflow-article p {
+  color: #939393; }
+
+#module .workflow-article button {
+  background: none;
+  border: 1px solid #8a292a;
+  border-radius: 20px;
+  padding: 5px 20px;
+  outline: none;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out; }
+  #module .workflow-article button:hover {
+    background-color: #8a292a;
+    color: #ffffff;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out; }
+
+#module .workflow-article .remarks {
+  font-style: italic;
+  font-size: 14px; }
+  #module .workflow-article .remarks span {
+    display: block;
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Dax-Regular"; }
+
+#module a.module-slider-navigation {
+  font-size: 30px;
+  color: #000;
+  text-decoration: none; }
+
+footer {
+  background-color: #8a292a;
+  padding: 80px 0; }
+  footer p {
+    color: #c28d8d;
+    font-size: 14px; }
+  footer span.logo-topBar .company-name {
+    font-family: "Dax-Light";
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: left;
+    padding: 0 47px 10px 0; }
+    footer span.logo-topBar .company-name span {
+      font-family: "Dax-Medium"; }
+  footer h3 {
+    font-family: "Dax-Light";
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0;
+    margin: 0 0 20px 0; }
+  footer ul {
+    margin: 0;
+    padding: 0;
+    font-size: 14px; }
+    footer ul li {
+      list-style-type: none;
+      color: #c28d8d;
+      margin: 2px 0; }
+      footer ul li a {
+        color: #c28d8d;
+        -webkit-transition: color 0.3s ease-out;
+        -moz-transition: color 0.3s ease-out;
+        -o-transition: color 0.3s ease-out;
+        transition: color 0.3s ease-out; }
+        footer ul li a:hover {
+          text-decoration: none;
+          color: #fff;
+          -webkit-transition: color 0.3s ease-out;
+          -moz-transition: color 0.3s ease-out;
+          -o-transition: color 0.3s ease-out;
+          transition: color 0.3s ease-out; }
+  footer .contact {
+    color: #c28d8d;
+    font-size: 14px; }
+    footer .contact td {
+      padding: 5px 10px 5px 0;
+      vertical-align: top; }
+      footer .contact td span {
+        font-size: 16px; }
+
+#testimonial .remark-background {
+  background-image: url(../assets/image/remark-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 15px -47px 0 -47px;
+  padding: 150px 0; }
+  #testimonial .remark-background .testimonial {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Dax-Regular";
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+    #testimonial .remark-background .testimonial span {
+      font-family: "Dax-Bold"; }
+  #testimonial .remark-background .quotation {
+    font-size: 30px;
+    quotes: "“" "”" "‘" "’";
+    padding: 10px 20px 0;
+    line-height: 1.4; }
+  #testimonial .remark-background .quotation:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #ccc;
+    font-size: 3em; }
+  #testimonial .remark-background .quotation::after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 35px;
+    color: #ccc;
+    font-size: 3em; }
+  #testimonial .remark-background .sign {
+    margin: 0;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: normal; }
+    #testimonial .remark-background .sign .photo {
+      margin-left: 10px; }
+      #testimonial .remark-background .sign .photo img {
+        border-radius: 50%;
+        width: 40px;
+        object-fit: cover;
+        height: 40px; }
+
+#testimonial .carousel-indicators > li {
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  background: none;
+  border: 2px solid #000; }
+  #testimonial .carousel-indicators > li.active {
+    background: #000; }
+
+img {
+  max-width: 100%; }
+
+.isotope-item {
+  z-index: 2; }
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width; }
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity; }
+
+.owl-item img {
+  width: inherit !important; }
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 2%;
+  position: relative; }
+  .carousel-wrap span {
+    font-size: 35px; }
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100;
+  -webkit-backface-visibility: hidden; }
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd; }
+
+.owl-nav i {
+  font-size: 52px; }
+
+.owl-nav .owl-prev {
+  left: -30px; }
+
+.owl-nav .owl-next {
+  right: -30px; }
+
+.w3-modal-content {
+  background: none !important; }
+
+.w3-button {
+  background-color: #000000 !important;
+  color: #fff !important; }
+
+.w3-hover-red:hover {
+  background-color: #f44336 !important; }
+
+#cards .card-title {
+  font-family: "Dax-Medium";
+  font-weight: 600; }
+  #cards .card-title a span.lodur-icon-eye {
+    font-size: 20px;
+    margin-top: -5px; }
+    #cards .card-title a span.lodur-icon-eye:hover {
+      color: #8a292a; }
+
+#cards h5 {
+  width: 100%; }
+
+.btn-module-details {
+  background-color: #8a292a;
+  color: #FFF; }
+  .btn-module-details:hover {
+    background: none;
+    border: 1px solid #000;
+    color: #000; }
