@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -68,7 +67,7 @@
                 <div class="col-6">
                     <h1><span class="bold">Modules</span><span class="borderBreak"><span>the tools we build</span></span></h1>
                 </div>
-                <div class="col-6">
+                <div class="col-6 text-right">
                     <a class="module-slider-navigation" href="#moduleCarousel" role="button" data-slide="prev">
                         <span class="lodur-icon-arrow-circle-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -79,7 +78,7 @@
                     </a>
                 </div>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner module-slider">
                 <div class="carousel-item active">
                     <div class="row no-gutters">
                         <div class="col-6">
@@ -93,7 +92,7 @@
                                 DNS Server - The DNS (Domain Name System) Server IP addresses currently used by the Router. Multiple DNS IP settings are common. Usually, the first available DNS Server is used.
                             </p>
                             <div>
-                                <button>See How It Works</button>
+                                <button class="btn-details">See How It Works</button>
                             </div>
                             <img src="assets/image/org-1.jpg" alt="">
                             <p class="remarks">
@@ -150,89 +149,121 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="cards">
-        <div class="row">
+            <div class="row more-modules">
             
-            <div class="col-md-3">
-                <div class="card bg-light">
-                    <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title border-bottom pb-3">Module name<a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-sm btn-module-details float-right">Read more <i class="fas fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card bg-light">
-                    <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-sm btn-module-details float-right">Read more <i class="fas fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card bg-light">
-                    <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-sm btn-module-details float-right">Read more <i class="fas fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card bg-light">
-                    <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-sm btn-module-details float-right">Read more <i class="fas fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- NEW CARD STYLE -->
-            <div class="mt-5 row">
-                <div class="col-md-4">
-                    <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-                        <div class="card-body d-flex flex-column align-items-start">
-                            <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a class="btn btn-module-details btn-sm" role="button" href="http://www.jquery2dotnet.com/">Continue reading</a>
+                <div class="col-md-3 content-load-more">
+                    
+                    <div class="card bg-light">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-3">Module name<a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
                         </div>
-                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src="//placeimg.com/250/250/arch" style="width: 200px; height: 250px;">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-                        <div class="card-body d-flex flex-column align-items-start">
+                <div class="col-md-3 content-load-more">
+                    <div class="card bg-light">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
                             <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a class="btn btn-module-details btn-sm" role="button" href="http://www.jquery2dotnet.com/">Continue reading</a>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
                         </div>
-                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src="//placeimg.com/250/250/arch" style="width: 200px; height: 250px;">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-                        <div class="card-body d-flex flex-column align-items-start">
+                <div class="col-md-3 content-load-more">
+                    <div class="card bg-light">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
                             <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a class="btn btn-module-details btn-sm" role="button" href="http://www.jquery2dotnet.com/">Continue reading</a>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
                         </div>
-                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src="//placeimg.com/250/250/arch" style="width: 200px; height: 250px;">
                     </div>
                 </div>
-            </div>
+                <div class="col-md-3 content-load-more">
+                    <div class="card bg-light">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3 content-load-more">
+                    <div class="card bg-light">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 content-load-more">
+                    <div class="card bg-light">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 content-load-more">
+                    <div class="card bg-light">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 content-load-more">
+                    <div class="card bg-light ">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 content-load-more">
+                    <div class="card bg-light ">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 content-load-more">
+                    <div class="card bg-light">
+                        <img class="card-img-top" src="//placeimg.com/280/180/tech" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-3">Module name <a href="#" class="float-right btn btn-sm d-inline-flex share"><span class="lodur-icon-eye"></span></a></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-sm btn-read-more float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="#" id="loadMore">Load More</a>
+                </div>
+            </div>
+            
         </div>
     </section>
+
 
     <section id="portfolio">
             <div class="container-fluid">
@@ -444,20 +475,50 @@
             <div class="row no-gutters">
                 <div class="col">
 
-                    <div class="carousel-wrap">
-                        <div class="owl-carousel">
-                            <div class="item"><img src="assets/image/customer-1.png"></div>
-                            <div class="item"><img src="assets/image/customer-2.png"></div>
-                            <div class="item"><img src="assets/image/customer-3.png"></div>
-                            <div class="item"><img src="assets/image/customer-1.png"></div>
-                            <div class="item"><img src="assets/image/customer-2.png"></div>
-                            <div class="item"><img src="assets/image/customer-3.png"></div>
-                            <div class="item"><img src="assets/image/customer-1.png"></div>
-                            <div class="item"><img src="assets/image/customer-2.png"></div>
-                            <div class="item"><img src="assets/image/customer-3.png"></div>
-                            <div class="item"><img src="assets/image/customer-1.png"></div>
-                            <div class="item"><img src="assets/image/customer-2.png"></div>
-                            <div class="item"><img src="assets/image/customer-3.png"></div>
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                            </div>
                         </div>
                     </div>
                       
@@ -469,7 +530,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 pt-5">
                         <span class="logo-topBar"><div class="company-name"><span>B Wahlstroem</span> Engineering GmbH</div></span>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                         
@@ -522,7 +583,7 @@
 
     
     <script src="js/jquery.isotope.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+    
 
 
 
@@ -680,35 +741,29 @@
                 //     }
                 // }
 
-                //Customers carousal scroll
-                $('.owl-carousel').owlCarousel({
-                    loop: true,
-                    margin: 0,
-                    nav: true,
-                    navText: [
-                        "<span class=' lodur-icon-arrow-circle-left'></span>",
-                        "<span class=' lodur-icon-arrow-circle-right'></span>"
-                    ],
-                    autoplay: true,
-                    autoplayHoverPause: true,
-                    responsive: {
-                        0: {
-                        items: 1
-                        },
-                        600: {
-                        items: 3
-                        },
-                        1000: {
-                        items: 5
-                        }
-                    }
-                })
                 
                 //portfolio popup
                 function onClick(element) {
                     document.getElementById("img01").src = element.src;
                     document.getElementById("modal01").style.display = "block";
                 }   
+
+                /*
+                    Load more content with jQuery - May 21, 2013
+                    (c) 2013 @ElmahdiMahmoud
+                */   
+
+                $(function () {
+                    $(".content-load-more").slice(0, 4).show();
+                    $("#loadMore").on('click', function (e) {
+                        e.preventDefault();
+                        $(".content-load-more:hidden").slice(0, 4).slideDown();
+                        if ($(".content-load-more:hidden").length == 0) {
+                            $("#load").fadeOut('slow');
+                        }
+                        
+                    });
+                });
 
                 
 
