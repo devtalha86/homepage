@@ -60,7 +60,7 @@ section{
             color: $primary-color;
             padding: 0 1rem 0 0;
             display: block;
-            font-size: 3rem;
+            font-size: 3.2rem;
         }
         .borderBreak{
             line-height: 0.5;
@@ -131,7 +131,7 @@ section{
         }
     }
     .map-container{
-        height: 500px;
+        height: 600px;
         margin: 15px -47px 0 -47px;
     }
     .disabled{
@@ -600,10 +600,11 @@ $animationSpeed: 40s;
     padding: 10px;
     text-align: center;
     border-radius: 30px;
-    background-color: $primary-color;
+    
+    background-color: #fff;
     width: 300px;
     margin: 0 auto;
-    color: #fff;
+    color: $primary-color;
     border-width: 0 1px 1px 0;
     border-style: solid;
     border-color: #fff;
@@ -613,12 +614,15 @@ $animationSpeed: 40s;
     -moz-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
     display: block;
+    border: 1px solid $primary-color;
 }
 
 #loadMore:hover {
-    background-color: #fff;
-    color: $primary-color;
-    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    color: #fff;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #fff;
     text-decoration: none;
     
 }

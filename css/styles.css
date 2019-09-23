@@ -762,7 +762,7 @@ section {
       color: #8a292a;
       padding: 0 1rem 0 0;
       display: block;
-      font-size: 3rem; }
+      font-size: 3.2rem; }
     section h1 .borderBreak {
       line-height: 0.5;
       text-align: center; }
@@ -819,7 +819,7 @@ section {
       color: #aeaeae; }
 
 #find .map-container {
-  height: 500px;
+  height: 600px;
   margin: 15px -47px 0 -47px; }
 
 #find .disabled {
@@ -1169,10 +1169,10 @@ footer {
   padding: 10px;
   text-align: center;
   border-radius: 30px;
-  background-color: #8a292a;
+  background-color: #fff;
   width: 300px;
   margin: 0 auto;
-  color: #fff;
+  color: #8a292a;
   border-width: 0 1px 1px 0;
   border-style: solid;
   border-color: #fff;
@@ -1181,10 +1181,13 @@ footer {
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
-  display: block; }
+  display: block;
+  border: 1px solid #8a292a; }
 
 #loadMore:hover {
-  background-color: #fff;
-  color: #8a292a;
-  border: 1px solid #8a292a;
+  background-color: #8a292a;
+  color: #fff;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #fff;
   text-decoration: none; }
