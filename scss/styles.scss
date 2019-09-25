@@ -291,12 +291,12 @@ section{
             }
         }
         .btn-read-more {
-            background-color: #8a292a;
-            color: #FFF;
+            background: none;
+            border: 1px solid #8a292a;
+            color: #8a292a;
             &:hover {
-                background: none;
-                border: 1px solid #000;
-                color: #000; 
+                background-color: #8a292a;
+                color: #FFF;
             }
         }
     }
@@ -304,8 +304,124 @@ section{
 }
 
 #company{
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
+
+/********* Contact page Start here ********/
+
+#contact{
+    margin: 0 -30px;
+    padding-top: 0;
+    .mb60 {
+        margin-bottom: 60px;
+      }
+      
+      .btn {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 600;
+        padding: 11px 30px;
+        border-radius: 6px;
+        line-height: 1.8;
+        letter-spacing: 0px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        word-wrap: break-word;
+        white-space: normal !important;
+      }
+      
+      .btn-primary {
+        background: none;
+        border: 1px solid #8a292a;
+        color: #8a292a;
+      
+        &:hover, &.focus, &:focus {
+            background-color: #8a292a;
+            color: #FFF;
+        }
+      }
+      
+      .space-medium {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        .addressContainer{
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 50px;
+                color: $primary-color;
+            }
+            .addressInfo{
+                border-left: 1px solid #c7c7c7;
+                margin-left: 20px;
+                padding-left: 20px;
+                h3{
+                }
+            }
+        }
+      }
+      
+      .pdt20 {
+        padding-top: 20px;
+      }
+      
+      .contact-pageheader {
+        position: relative;
+        background: $primary-color;
+        margin-bottom: 70px;
+      }
+      
+      .contact-caption {
+        position: relative;
+        top: 180px;
+        .contact-text{
+            color: $footer-text--color;
+            font-family: $daxLight;
+            font-size: 18px;
+        }
+      }
+      
+      .contact-title {
+        color: #fff;
+        font-size: 3.2rem;
+        font-family: $daxMedium;
+        margin-bottom: 20px;
+      }
+      
+      .contact-caption-text {
+        font-size: 23px;
+        color: #272d2c;
+      }
+      
+      #contact-map {
+        height: 450px;
+        width: 100%;
+        position: relative;
+      }
+      
+      .contact-form {
+        background-color: #fff;
+        padding: 30px;
+        margin-left: 5rem;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+        top: 100px;
+        -webkit-box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.29);
+        -moz-box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.29);
+        box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.29);
+        form{
+            width: 100%;
+        }
+      }
+      
+      
+    
+}
+
+/********* Contact page End here ********/
 
 footer{
     background-color: $primary-color;
@@ -372,7 +488,7 @@ footer{
 }
 
 #testimonial{
-    margin-bottom: 5rem; 
+    margin-bottom: 8rem; 
     .remark-background{
         background-image: url(../assets/image/remark-bg.jpg);
         background-attachment: fixed;
