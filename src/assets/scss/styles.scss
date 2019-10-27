@@ -1,4 +1,6 @@
 @import 'variables','fonts','icons';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
 
 html, body{
     padding: 0;
@@ -8,7 +10,7 @@ html, body{
 #navbar {
     background-color: rgba(0, 0, 0, 1);
     position: fixed;
-    top: -88px;
+    top: -60px;
     width: 100%;
     display: block;
     transition: top 0.3s;
@@ -32,14 +34,15 @@ html, body{
             color: black;
         }
     }
-    .navBar-right{
+    .navBar-left{
         display: flex;
         align-items: center;
-        float: right;
+        float: left;
         justify-content: space-between;
-        width: 70%;
         .language-switcher{
-            margin-top: 9px;
+            padding-left: 30px;
+            border-left: 1px solid #ccc;
+            margin-left: 10px;
             nav {
                 width: 35px;
                 line-height: 1.5;
@@ -67,6 +70,13 @@ html, body{
                 }
             }    
         }
+    }
+    .navBar-right{
+        display: flex;
+        align-items: center;
+        float: right;
+        justify-content: space-between;
+        
         .logo-topBar{
             .company-name{
                 font-family: $daxLight;
@@ -529,7 +539,6 @@ footer{
         background-attachment: fixed;
         background-size: cover;
         margin: 15px -47px 0 -47px;
-        padding: 150px 0;
         .testimonial{
             background: rgba(0, 0, 0, 0.6);
             padding: 15px 30px;
@@ -537,7 +546,7 @@ footer{
             color: #fff;
             font-family: $daxRegular;
             font-size: 20px;
-            width: 50%;
+            width: 100%;
             margin: 0 auto;
             text-align: center;
             span{

@@ -9,12 +9,18 @@
                 </div>
             </div>
         </section>
+        <Testimonial />
     </div>
 </template>
 
 <script>
+import Testimonial from './Testimonial'
+
 export default {
     name: 'Index',
+    components: {
+        Testimonial
+    },
     data() {
         return {
 

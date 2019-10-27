@@ -6,17 +6,16 @@
 </template>
 
 <script>
-import Navbar from './views/Navbar'
+import Navbar from "./views/Navbar";
 
 export default {
-    name: 'App',
-    components: {
-        Navbar
-    }
-}
+  name: "App",
+  components: {
+    Navbar
+  }
+};
 </script>
 
 <style lang="scss">
-@import './assets/scss/styles.scss'
-
+@import "./assets/scss/styles.scss";
 </style>
