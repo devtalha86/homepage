@@ -10,16 +10,22 @@
             </div>
         </section>
         <Testimonial />
+        <Company />
+        <Contact />
     </div>
 </template>
 
 <script>
-import Testimonial from './Testimonial'
+import Testimonial from './Testimonial';
+import Company from './Company';
+import Contact from './Contact';
 
 export default {
     name: 'Index',
     components: {
-        Testimonial
+        Testimonial,
+        Company,
+        Contact
     },
     data() {
         return {

@@ -2,11 +2,16 @@
     <div class="app-navbar">
         <div id="navbar" :style="[ navTop != null ? { top: navTop } : false ]">
             <div class="navBar-left">
-                <a href="#intro" class="active" v-smooth-scroll>Home</a>
-                <a href="#module">Portfolio</a>
-                <a href="#testimonial" v-smooth-scroll>Testimonials</a>
-                <a href="#company">Customers</a>
-                <a href="#contact">Get in touch</a>
+                <scrollactive active-class="active"
+                :offset="80"
+                :duration="800"
+                bezier-easing-value=".5,0,.35,1">
+                    <a href="#intro" class="scrollactive-item">Home</a>
+                    <a href="#module" class="scrollactive-item">Portfolio</a>
+                    <a href="#testimonial" class="scrollactive-item">Testimonials</a>
+                    <a href="#company" class="scrollactive-item">Customers</a>
+                    <a href="#contact" class="scrollactive-item">Get in touch</a>
+                </scrollactive>
                 <div class="language-switcher">
                     <nav>
                         <ul>
@@ -30,6 +35,7 @@
 </template>
 
 <script>
+    
     export default {
         name: 'Navbar',
         data() {

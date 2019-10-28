@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="testimonial">
         <section id="testimonial">
             <div class="container-fluid carousel slide" id="testimonialCarousel">
                 <div class="row no-gutters">
@@ -10,7 +10,21 @@
                 <div class="remark-background">
                     <div class="carousel-inner">
                         <vueper-slides autoplay class="no-shadow" speed="3000">
-                            <vueper-slide v-for="(slide, index) in slides" :key="index" :content="slide.content">
+                            <vueper-slide v-for="slide in slides" :key="slide.id">
+                                <div slot="slideContent">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="testimonial">
+                                                    <blockquote>
+                                                        <p class="quotation">{{ slide.quote }}</p>
+                                                        <div class="sign">— {{ slide.author }} <span class="photo"><img :src="getImgUrl(slide.img)" alt=""></span></div>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </vueper-slide>
                         </vueper-slides>
                     </div>
@@ -26,47 +40,41 @@
         VueperSlide
     } from "vueperslides";
 
-    // Since v. 1.6.0, you need to include Vueper Slides CSS file for default styles.
-    import 'vueperslides/dist/vueperslides.css'
-
     export default {
+        name: 'Testimonial',
         components: {
             VueperSlides,
             VueperSlide
         },
-        data: () => ({
-            slides: [{
-                    content: `<div class="item">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="testimonial">
-                                        <blockquote>
-                                            <p class="quotation">
-                                               ssser No doubt, Lodur is a Wonder Software</p>
-                                            <div class="sign">— Ricky Martin <span class="photo"><img src=".src/assets/image/photo.jpg" alt=""></span></div>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>`
-                },
-                {
-                    content: `<div class="item">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="testimonial">
-                                        <blockquote>
-                                            <p class="quotation">
-                                               ssser No doubt, Lodur is a Wonder Software</p>
-                                            <div class="sign">— Ricky Martin <span class="photo"><img src="@/assets/image/photo.jpg" alt=""></span></div>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>`
-                }
-            ]
-        })
+        data(){
+            return {
+                slides: [
+                    {
+                        id: 1,
+                        author: 'Ricky Martin',
+                        img: 'photo.jpg',
+                        quote: 'No doubt, Lodur is a Wonder Software'
+                    },
+                    {
+                        id: 2,
+                        author: 'Ricky Martin',
+                        img: 'customer-2.png',
+                        quote: 'No doubt, Lodur is a Wonder Software'
+                    },
+                    {
+                        id: 3,
+                        author: 'Ricky Martin',
+                        img: 'photo.jpg',
+                        quote: 'No doubt, Lodur is a Wonder Software'
+                    }
+                ]
+            }
+        },
+        methods: {
+            getImgUrl(pic) {
+                return require('../assets/image/'+pic)
+            }
+        }
     }
 </script>
 
