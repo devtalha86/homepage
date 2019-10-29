@@ -9,6 +9,7 @@
                 </div>
             </div>
         </section>
+        <Portfolio />
         <Testimonial />
         <Company />
         <Contact />
@@ -16,6 +17,7 @@
 </template>
 
 <script>
+import Portfolio from './Portfolio';
 import Testimonial from './Testimonial';
 import Company from './Company';
 import Contact from './Contact';
@@ -23,9 +25,10 @@ import Contact from './Contact';
 export default {
     name: 'Index',
     components: {
+        Portfolio,
         Testimonial,
         Company,
-        Contact
+        Contact,
     },
     data() {
         return {

@@ -69,20 +69,17 @@
                 </div>
             </div>
             <Address />
-            <Footer />
         </section>
     </div>
 </template>
 
 <script>
 import Address from './Address';
-import Footer from './Footer';
 
     export default {
         name: 'Contact',
         components: {
-            Address,
-            Footer
+            Address
         },
         data() {
             return {

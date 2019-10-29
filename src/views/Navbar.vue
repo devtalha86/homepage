@@ -1,16 +1,18 @@
 <template>
     <div class="app-navbar">
-        <div id="navbar" :style="[ navTop != null ? { top: navTop } : false ]">
+        <div id="navbar" :style="{ top: navTop }">
             <div class="navBar-left">
                 <scrollactive active-class="active"
                 :offset="80"
                 :duration="800"
                 bezier-easing-value=".5,0,.35,1">
-                    <a href="#intro" class="scrollactive-item">Home</a>
-                    <a href="#module" class="scrollactive-item">Portfolio</a>
-                    <a href="#testimonial" class="scrollactive-item">Testimonials</a>
-                    <a href="#company" class="scrollactive-item">Customers</a>
-                    <a href="#contact" class="scrollactive-item">Get in touch</a>
+
+                <router-link :to="{ name: 'Index', hash: '#intro' }" class="scrollactive-item">Home</router-link>
+                <router-link :to="{ path: '/#module' }" class="scrollactive-item">Portfolio</router-link>
+                <router-link :to="{ path: '/#testimonial' }" class="scrollactive-item">Testimonials</router-link>
+                <router-link :to="{ path: '/#company' }" class="scrollactive-item">Customers</router-link>
+                <router-link :to="{ path: '/#contact' }" class="scrollactive-item">Get in touch</router-link>
+
                 </scrollactive>
                 <div class="language-switcher">
                     <nav>
@@ -40,26 +42,38 @@
         name: 'Navbar',
         data() {
             return {
-                navTop: null,
+                navTop: "-60px"
             }
         },
         mounted() {
-            window.addEventListener('scroll', this.onScroll)
+            window.addEventListener('scroll', this.onScroll);
+            if(this.$route.name !== '/') {
+                this.navTop = 0;
+            }
         },
         methods: {
             onScroll() {
                 const currentScrollPosition = window.pageYOffset
 
-                if (currentScrollPosition < 0) {
-                    return
+                if(this.$route.path === '/') {
+                    if (currentScrollPosition < 0) {
+                        return
+                    }
+
+                    if (currentScrollPosition > 80) {
+                        this.navTop = 0
+                    } else {
+                        this.navTop = null
+                    }
                 }
 
-                if (currentScrollPosition > 80) {
-                    this.navTop = 0
-                } else {
-                    this.navTop = null
+            }
+        },
+        watch:{
+            $route(){
+                if(this.$route.name !== '/') {
+                    this.navTop = 0;
                 }
-
             }
         }
     }
