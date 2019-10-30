@@ -71,9 +71,15 @@
         },
         watch:{
             $route(){
-                if(this.$route.name !== '/') {
+                if(this.$route.path !== '/') {
                     this.navTop = 0;
                 }
+                if(this.$route.path === '/') {
+                    if(window.pageYOffset < 80) {
+                        this.navTop = "-60px";
+                    }
+                }
+                
             }
         }
     }

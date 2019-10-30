@@ -92,6 +92,7 @@
         },
         created() {
             this.initId = parseInt(this.$route.params.module_id);
+            window.scrollTo(0,0);
         },
         methods: {
             getImgUrl(pic) {

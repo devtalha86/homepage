@@ -25,9 +25,6 @@
 <script>
     export default {
         name: "PortfolioSingle",
-        components: {
-
-        },
         data() {
             return {
                 modules: [
