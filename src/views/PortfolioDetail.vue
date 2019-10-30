@@ -1,6 +1,6 @@
 <template>
     <div class="portfolio-detail">
-        <section id="" style="margin-top:50px;">
+        <section id="module" style="margin-top:50px;">
             <div class="container-fluid carousel slide">
                 <div class="carousel-inner module-slider">
                     <vueper-slides  class="no-shadow" speed="3000" :bullets="false" :visible-slides="1" :slide-ratio="1/1" :initSlide=initId>
@@ -11,10 +11,7 @@
                                         <h1><span class="bold">Einsatzplanung</span><span class="borderBreak"><span>a
                                                     handy tool to plan an emergency</span></span></h1>
                                     </div>
-                                    <div class="col-6 text-right vueperslides__arrows">
-                                        <!-- <button aria-label="Previous" class="vueperslides__arrow vueperslides__arrow--prev">arrow_left</button>
-                                        <button aria-label="Next" class="vueperslides__arrow vueperslides__arrow--next">arrow_right</button> -->
-                                        
+                                    <div class="col-6 text-right vueperslides__arrows">                                        
                                     </div>
                                 </div>
                                 <div class="row">
@@ -112,16 +109,5 @@
 .portfolio-detail .vueperslides__parallax-wrapper {
     padding-bottom: 54%!important
 }
-// .portfolio-detail .vueperslides__arrows button {
-//     position: absolute;
-//     top: 33px;
-//     right: 0;
-//     font-size: 9px;
-//     border-radius: 50%;
-//     border: 2px solid #a6a6a6;
-//     width: 32px;
-//     height: 32px;
-//     text-align: center;
-//     color: #a6a6a6;
-// }
+
 </style>

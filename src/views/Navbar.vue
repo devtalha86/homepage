@@ -47,7 +47,7 @@
         },
         mounted() {
             window.addEventListener('scroll', this.onScroll);
-            if(this.$route.name !== '/') {
+            if(this.$route.path !== '/') {
                 this.navTop = 0;
             }
         },
