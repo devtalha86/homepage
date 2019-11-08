@@ -12,7 +12,7 @@
                     <PortfolioSingle 
                       v-for="module in controlModules"
                       :key="module.id"
-                      module="module"
+                      :moduleData="module"
                     />
                   </div>
               </div>
@@ -39,14 +39,14 @@ export default {
     },
     watch: {
         contentLength: function() {
-            if(this.contentLength >= this.modules.length) {
+            if(this.contentLength >= this.$store.getters.modules.length) {
                 this.loadMore = false
             }
         }
     },
     computed: {
         controlModules: function () {
-            let limitModules = this.modules.filter((item, index) => {
+            let limitModules = this.$store.getters.modules.filter((item, index) => {
                 if(this.contentLength > index) {
                     return {...item}
                 }
@@ -57,97 +57,11 @@ export default {
         
     },
     data() {
-      return {
-          modules: [
-              {
-                  id: 1,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                              bulk of the card's content.`,
-              },
-              {
-                  id: 2,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                              bulk of the card's content.`,
-              },
-              {
-                  id: 3,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                              bulk of the card's content.`,
-              },
-              {
-                  id: 78,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                              bulk of the card's content.`,
-              },
-              {
-                  id: 11,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                              bulk of the card's content.`,
-              },
-              {
-                  id: 22,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                              bulk of the card's content.`,
-              },
-              {
-                  id: 34,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                              bulk of the card's content.`,
-              },
-              {
-                  id: 42,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                              bulk of the card's content.`,
-              },
-              {
-                  id: 5,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                              bulk of the card's content.`,
-              },
-              {
-                  id: 6,
-                  img: 'tech',
-                  name: 'Module name',
-                  text: `Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.`,
-                    },
-                    {
-                        id: 7,
-                        img: 'tech',
-                        name: 'Module name',
-                        text: `Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.`,
-                    },
-                    {
-                        id: 8,
-                        img: 'tech',
-                        name: 'Module name',
-                        text: `Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.`,
-                    },
-                ],
-                contentLength: 4,
-                loadMore: null
-            }
-      },
+        return {
+            contentLength: 4,
+            loadMore: null
+        }
+    }
 };
 </script>
 
