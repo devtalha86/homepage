@@ -9,7 +9,7 @@
                 </div>
                 <div class="remark-background">
                     <div class="carousel-inner">
-                        <vueper-slides autoplay class="no-shadow" speed="3000">
+                        <vueper-slides autoplay class="no-shadow" speed="3000" :touchable="false">
                             <vueper-slide v-for="slide in slides" :key="slide.id">
                                 <div slot="slideContent">
                                     <div class="item">
