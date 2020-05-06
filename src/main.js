@@ -7,8 +7,18 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "vueperslides/dist/vueperslides.css";
 
+import $ from 'jquery'
+
 Vue.config.productionTip = false;
 Vue.use(VueScrollactive);
+
+Vue.directive('tooltip', function(el, binding){
+  $(el).tooltip({
+    title: binding.value,
+    placement: binding.arg,
+    trigger: 'focus'
+  })
+})
 
 new Vue({
   store,

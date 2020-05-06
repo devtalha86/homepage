@@ -9,6 +9,7 @@
                 </div>
             </div>
         </section>
+        <Map />
         <Portfolio />
         <Testimonial />
         <Company />
@@ -17,6 +18,8 @@
 </template>
 
 <script>
+
+    import Map from './Map';
 import Portfolio from './Portfolio';
 import Testimonial from './Testimonial';
 import Company from './Company';
@@ -25,6 +28,7 @@ import Contact from './Contact';
 export default {
     name: 'Index',
     components: {
+        Map,
         Portfolio,
         Testimonial,
         Company,

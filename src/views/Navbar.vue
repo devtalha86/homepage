@@ -4,6 +4,7 @@
             <div id="navbar" :style="{ top: navTop }">
                 <div class="navBar-left" v-if="!isMobile">
                     <router-link :to="{ name: 'Index', hash: '#intro' }" class="scrollactive-item">Home</router-link>
+                    <router-link :to="{ path: '/#find' }" class="scrollactive-item">Find</router-link>
                     <router-link :to="{ path: '/#module' }" class="scrollactive-item">Portfolio</router-link>
                     <router-link :to="{ path: '/#testimonial' }" class="scrollactive-item">Testimonials</router-link>
                     <router-link :to="{ path: '/#company' }" class="scrollactive-item">Customers</router-link>
@@ -29,6 +30,7 @@
             </div>
             <Slide v-if="isMobile">
                 <router-link :to="{ name: 'Index', hash: '#intro' }" class="scrollactive-item">Home</router-link>
+                <router-link :to="{ path: '/#find' }" class="scrollactive-item">Find</router-link>
                 <router-link :to="{ path: '/#module' }" class="scrollactive-item">Portfolio</router-link>
                 <router-link :to="{ path: '/#testimonial' }" class="scrollactive-item">Testimonials</router-link>
                 <router-link :to="{ path: '/#company' }" class="scrollactive-item">Customers</router-link>
